@@ -1,0 +1,252 @@
+*{
+    box-sizing:border-box;
+}
+body{
+font-family: 'Open Sans', sans-serif;
+}
+.col-md-3{
+    width: 25%;
+}
+.col-md-7{
+    width: 55%;
+   
+}
+.col-md-2{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+ header{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(29, 33, 38);
+}
+.container{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    color:rgb(164, 174, 173); 
+}
+.main_menu ul{
+    display: flex;
+}
+.main_menu a{
+    text-decoration:none;
+    text-align: center;
+    padding:5px 10px 5px 10px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(164, 174, 173);;
+    font-weight: 600;
+}
+.main_menu > ul > li{
+    margin: 0 5px;
+    align-self: center;
+    font-size:15px;
+    border:2px solid rgba(35, 183, 163, 0);
+   
+}
+.green_text a{
+    border:2px solid rgb(35, 183, 164);
+    border-radius: 5px;
+    color: rgb(35, 183, 164);
+}
+.main_menu > ul > li:first-child:hover{
+    border: 2px solid rgba(164, 174, 173, 0);
+}
+.main_menu > ul > li:hover{
+    border:2px solid rgb(164, 174, 173);
+    border-radius: 5px;
+}
+.search {
+    width: 190px;
+    height: 25px;
+    border:2px solid rgb(164, 174, 173);
+    background-color:rgba(35, 183, 163, 0);
+    border-radius: 5px;
+    position: relative;
+    
+}
+.search input{
+    width: 150px;
+    height: 100%;
+    background-color:rgba(35, 183, 163, 0);
+    border: none;
+    padding-left: 5px;
+    padding-top: 3px;
+    color:rgb(164, 174, 173);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+.search button{
+    background: url(image/search.png) no-repeat 50% 50%;
+    width: 25px;
+    height: 20px;
+    border:none;
+    position: absolute;
+    top:1px;
+    right: 10px;
+}
+
+/* --------------------------MAIN---------------------- */
+.slides{
+    width: 100%;
+    height: 660px;
+    background:url(image/slides.png) no-repeat 50% 50%;
+}
+/* ----------------------Текст левая сторона  ------------------------- */
+.text{
+    display: flex;
+    margin-top:80px;
+    flex-wrap:wrap;
+    padding-right: 20px;
+}
+.rectangle{
+    width:10px;
+    height: 35px;
+    background-color:rgb(164, 174, 173);
+}
+.first_text{
+    text-transform:uppercase;
+    color:rgb(41, 57, 54);
+    font-weight:600;
+    font-size: 30px;
+    align-self: center;
+    margin-left:10px
+}
+.paragraphs{
+    margin:60px 0 50px 0;
+}
+.paragraphs b{
+    font-weight: 600;
+}
+.paragraphs > p{
+    color:rgb(141, 143, 146);
+    line-height: 25px;
+    font-weight:300;
+}
+.paragraphs > p:first-child{
+    margin-bottom:40px;
+}
+/* ----------------------соц сети-------------------------- */
+.social_network{
+    display:flex;
+    justify-content: space-between;
+    width: 304px;
+    height: 160px;    
+}
+.social_network > div{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(200, 205, 208);
+    cursor:pointer;
+}
+.social_network > div:hover{
+    background-color: rgb(208, 213, 217);
+}
+.facebook{
+    background: url(image/facebook.png) no-repeat 50% 50%;
+}
+.twitter{
+    background: url(image/twitter.png) no-repeat 50% 50%;
+}
+.google_plus{
+    background: url(image/google_pl.png) no-repeat 50% 50%;
+}
+.dribbble{
+    background: url(image/dribbble.png) no-repeat 50% 50%;
+}
+.behance{
+    background: url(image/behance.png) no-repeat 50% 50%;
+}
+/* --------------------правая сторона ---------------------- */
+.col-md-5{
+    width: 45%;
+    display: flex;
+}
+.col-md-1{
+    width: 10%;
+}
+.col-md-10{
+    width: 90%;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(35, 183, 164);
+    color:rgb(225, 225, 225);
+    text-align: center;
+    line-height:50px;
+}
+.goal_num{
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content:space-between;
+}
+.Goals{
+    display: flex;
+    height: 295px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.text_goal > span{
+    text-transform:uppercase;
+    color: rgb(41, 47, 54);
+    font-weight: 600;
+
+}
+.text_goal > p{
+    padding-top: 10px;
+    line-height: 25px;
+    color:rgb(141, 143, 146);
+}
+.border_bottom{
+    border-bottom: 1px solid rgb(221, 225, 228);
+}
+/* --------------------Team----------------- */
+.TEAM{
+    display: flex;
+    flex-direction: column;
+}
+.team_foto{
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    margin-top:60px;
+    justify-content: space-between;
+}
+
+.photo_description{
+    height: 370px;
+    background-color: rgb(225, 230, 234);
+    cursor: pointer;
+}
+
+/* .photo_description:hover{
+    filter: opacity(60%);
+    background-color: rgb(58, 69, 77);
+} */
+
+.team_text{
+    margin:15px 0 0 18px;
+    
+}
+.team_text > span{
+    text-transform: uppercase;
+    color:rgb(41, 47, 54);
+    font-weight: 600;
+
+} 
+.team_text > p{
+    color:rgb(141, 143, 146);
+    padding-top: 5px;
+
+}
