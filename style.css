@@ -40,7 +40,7 @@ body{
     border:2px solid rgba(35, 183, 163, 0);
     margin: 0 5px;
     align-self: center;
-    font-size:15px;
+    font-size:10px;
 }
 .green_text a{
     border:2px solid rgb(35, 183, 164);
@@ -96,11 +96,11 @@ body{
     display: flex;
 }
 .text{
-    width: 55%;
+    width: 100%;
     display: flex;
     margin-top:80px;
     flex-wrap:wrap;
-    padding-right: 20px;
+    padding-right: 15px;
 }
 .rectangle{
     width:10px;
@@ -116,7 +116,7 @@ body{
     margin-left:10px
 }
 .paragraphs{
-    margin:60px 0 50px 0;
+    margin:40px 0 50px 0;
 }
 .paragraphs b{
     font-weight: 600;
@@ -133,12 +133,11 @@ body{
 .social_network{
     display:flex;
     justify-content: space-between;
-    width: 304px;
-    height: 160px;    
+    width: 100%;
 }
 .social_network > div{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(200, 205, 208);
     cursor:pointer;
 }
@@ -161,7 +160,18 @@ body{
     background: url(image/behance.png) no-repeat 50% 50%; 
 }
 /* --------------------правая сторона ---------------------- */
-
+.Goals{
+    margin: 50px 0 50px 0;
+}
+.all_goals{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.number_goal{
+    width: 10%;
+}
 .square{
     width: 50px;
     height: 50px;
@@ -170,24 +180,9 @@ body{
     text-align: center;
     line-height:50px;
 }
-.goal_num{
-    width: 5%;
-    margin-top:180px;
-    display: flex;
-    flex-direction: column;
-    height: 275px;
-    justify-content:space-between;
- 
-}
-.Goals{
-    width: 40%;
-    margin-top:180px;
-    display: flex;
-    height: 300px;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10px;
- 
+.text_goal{
+    width: 90%;
+    padding-left:25px;
 }
 .text_goal > span{
     text-transform:uppercase;
@@ -205,7 +200,6 @@ body{
 }
 /* --------------------Team----------------- */
 .section_team{
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -213,8 +207,8 @@ body{
 }
 .team_foto{
     display: flex;
-    flex-direction: row;
-    margin-top:60px;
+    flex-direction: column;
+    margin:60px 0 0 15px;
     justify-content: space-between;
 }
 
@@ -222,6 +216,7 @@ body{
     height: 370px;
     background-color: rgb(225, 230, 234);
     cursor: pointer;
+    margin-bottom: 15px;
 } 
 
 .photo_description:hover{
@@ -231,7 +226,6 @@ body{
 
 .team_text{
     margin:15px 0 0 18px;
-    
 }
 .team_text > span{
     text-transform: uppercase;
@@ -242,11 +236,10 @@ body{
 .team_text > p{
     color:rgb(141, 143, 146);
     padding-top: 5px;
-
 }
 
 
-
+/* Tablet */
 @media(min-width:768px){
     .container{
         max-width: 720px;
@@ -254,22 +247,76 @@ body{
     .header-row{
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         height: 80px;
     }
     .main_menu{
         display: flex;
     }
-}
-
-@media(min-width:992px){
-    .container{
-        min-width: 960px;
+    .section_one{
+        margin-bottom: 50px;
+    }
+    .Goals{
+        margin-top: 140px;
+    }
+    .team_foto{
+        flex-direction: row;
+        flex-wrap:wrap;
     }
 }
 
+
+/* Laptop */
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    .social_network{
+        width: 305px;
+    }
+    .main_menu a{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+
+}
+
+
+/* desktop */
 @media(min-width:1200px){
     .container{
         max-width: 1140px;
+    }
+    .main_menu > li{
+        font-size: 15px;
+    }
+    .team_foto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:0 0 0 0;
+    }
+    .section_team{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:767px){
+    .logo, .search{
+        margin: 7px;
+}
+    .main_menu{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: pre;
+        margin-bottom: 5px;
+    }
+    .section_one{
+
+        flex-direction: column;
     }
 }
