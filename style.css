@@ -1,32 +1,24 @@
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    }
-.container{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-.row{
-    display: flex;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-[class*="col-"]{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.header{
+ }
+
+
+header{
+    background-color: rgb(29, 33, 38);
     position: sticky;
     top:0;
-    background-color:rgb(29, 33, 38);
+    z-index: 10;
 }
-.header-row{
+.header_row{
+    align-items: center; /* Не вирівняю по центру хоч і задана ширина 100% для items елементу*/
     flex-direction: column;
 }
+
+
+/* ---------------------MENU--------------------- */
 .main_menu a{
     text-decoration:none;
     text-align: center;
@@ -35,12 +27,12 @@ body{
     text-transform: uppercase;
     color: rgb(164, 174, 173);;
     font-weight: 600;
+    font-size:10px;
 }
 .main_menu > li{
     border:2px solid rgba(35, 183, 163, 0);
     margin: 0 5px;
-    align-self: center;
-    font-size:10px;
+    align-self: center
 }
 .green_text a{
     border:2px solid rgb(35, 183, 164);
@@ -54,8 +46,11 @@ body{
     border:2px solid rgb(164, 174, 173);
     border-radius: 5px;
 }
+
+
+/* ---------------------SEARCH--------------------- */
 .search {
-    width: 190px;
+    width: 150px;
     height: 25px;
     border:2px solid rgb(164, 174, 173);
     background-color:rgba(35, 183, 163, 0);
@@ -64,7 +59,7 @@ body{
     
 }
 .search input{
-    width: 150px;
+    width: 110px;
     height: 100%;
     background-color:rgba(35, 183, 163, 0);
     border: none;
@@ -85,38 +80,54 @@ body{
     top:1px;
     right: 10px;
 }
-/* --------------------------MAIN---------------------- */
+
+
+/* ---------------------SEARCH--------------------- */
 .slides{
     width: 100%;
     height: 660px;
     background:url(image/slides.png) no-repeat 50% 50%;
 }
-/* ----------------------Текст левая сторона  ------------------------- */
-.section_one{
+
+/* --------------------- WE ARE MODEST--------------------- */
+.modest_row{
     display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
-.text{
+.page_title{
     width: 100%;
     display: flex;
-    margin-top:80px;
-    flex-wrap:wrap;
-    padding-right: 15px;
+    margin-bottom: 60px;
+    margin-top: 80px;
 }
-.rectangle{
+
+.rectangle_white, .rectangle_dark{
     width:10px;
     height: 35px;
+}
+.rectangle_white{
     background-color:rgb(164, 174, 173);
 }
-.first_text{
+.rectangle_dark{
+    background-color:rgb(78, 90, 98);
+}
+.title_text_white, .title_text_dark{
     text-transform:uppercase;
-    color:rgb(41, 57, 54);
+    
     font-weight:600;
-    font-size: 30px;
+    font-size: 25px;
     align-self: center;
-    margin-left:10px
+    margin-left:10px;
+}
+.title_text_white{
+    color:rgb(41, 57, 54);
+}
+.title_text_dark{
+    color:rgb(225, 226, 227);
 }
 .paragraphs{
-    margin:40px 0 50px 0;
+    margin-bottom:50px;
 }
 .paragraphs b{
     font-weight: 600;
@@ -129,7 +140,7 @@ body{
 .paragraphs > p:first-child{
     margin-bottom:40px;
 }
-/* ----------------------соц сети-------------------------- */
+/* --------------------- SOCIAL NETWORK--------------------- */
 .social_network{
     display:flex;
     justify-content: space-between;
@@ -159,71 +170,107 @@ body{
 .behance{
     background: url(image/behance.png) no-repeat 50% 50%; 
 }
-/* --------------------правая сторона ---------------------- */
-.Goals{
-    margin: 50px 0 50px 0;
-}
+/* --------------------- SOCIAL NETWORK--------------------- */
 .all_goals{
     width:100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 25px;
 }
 .number_goal{
-    width: 10%;
+   width: 10%;
+   height: 50px;
 }
 .square{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(35, 183, 164);
-    color:rgb(225, 225, 225);
-    text-align: center;
-    line-height:50px;
+   width: 50px;
+   height: 50px;
+   background-color: rgb(35, 183, 164);
+   color:rgb(225, 225, 225);
+   text-align: center;
+   line-height:50px;
 }
 .text_goal{
-    width: 90%;
-    padding-left:25px;
+   width: 90%;
+   margin-left:20px;
 }
 .text_goal > span{
-    text-transform:uppercase;
-    color: rgb(41, 47, 54);
-    font-weight: 600;
+   text-transform:uppercase;
+   color: rgb(41, 47, 54);
+   font-weight: 600;
 
 }
 .text_goal > p{
-    padding-top: 10px;
-    line-height: 25px;
-    color:rgb(141, 143, 146);
-}
-.border_bottom{
-    border-bottom: 1px solid rgb(221, 225, 228);
-}
-/* --------------------Team----------------- */
-.section_team{
-    display: flex;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.team_foto{
-    display: flex;
-    flex-direction: column;
-    margin:60px 0 0 15px;
-    justify-content: space-between;
+   padding-top: 10px;
+   line-height: 25px;
+   color:rgb(141, 143, 146);
 }
 
+.border_bottom{
+    border-bottom: 1px solid  rgb(221, 225, 228);
+}
+/* --------------------- TEAM--------------------- */
+.team_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:100px;
+}
+
+.photo_description img{
+    width: 100%;
+}
 .photo_description{
     height: 370px;
+    width: 263px;
     background-color: rgb(225, 230, 234);
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom:15px;
+    position: relative;
+   
 } 
-
+.hover_foto_team{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(225,225,225,0.3);
+    position: absolute;
+    top:0;
+    left:0;
+    visibility: hidden;
+}
 .photo_description:hover{
-    filter: opacity(60%);
     background-color: rgb(58, 69, 77);
-} 
-
+}
+.photo_description:hover > .hover_foto_team{
+    visibility:visible;
+}
+.photo_description:hover > .team_text span, .photo_description:hover > .team_text p{
+    color:rgb(192, 195, 197);
+}
+.team_icons_hover{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+}
+.team_icons_hover > div{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(58, 69, 77);
+    margin-right:1px;
+}
+.team_icons_hover > div:hover{
+    background-color:rgb(78, 90, 98);
+}
+.hover_twit{
+    background: url(image/icon_tw.png) no-repeat 50% 50%;
+}
+.hover_fb{
+    background: url(image/icon_facebook.png) no-repeat 50% 50%;
+}
+.hover_in{
+    background: url(image/icon_in.png) no-repeat 50% 50%;
+}
 .team_text{
     margin:15px 0 0 18px;
 }
@@ -238,85 +285,336 @@ body{
     padding-top: 5px;
 }
 
+.dark_title{
+    background-color: rgb(58, 69, 77);
+}
 
-/* Tablet */
-@media(min-width:768px){
-    .container{
-        max-width: 720px;
-    }
-    .header-row{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        height: 80px;
-    }
-    .main_menu{
-        display: flex;
-    }
-    .section_one{
-        margin-bottom: 50px;
-    }
-    .Goals{
-        margin-top: 140px;
-    }
-    .team_foto{
-        flex-direction: row;
-        flex-wrap:wrap;
-    }
+/* --------------------- LOVELY WORK--------------------- */
+
+.work {
+    margin-bottom:15px;
+}
+.work_img img{
+    width: 100%;
+}
+.work_img{
+    position: relative;
+}
+.lovely_work_hover{
+    height: 80%;
+    width: 100%;
+    background-color:rgba(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    left:0;
+    visibility: hidden;
+}
+.text_hover{
+    width: 100%;
+    height: 20%;
+    background-color:rgb(41, 47, 54) ;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    visibility: hidden;
+}
+.text_hover span{
+    display: block;
+    color:rgb(225,225,225);
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top:15px;
+}
+.plus_hover{
+    height: 100%;
+    width: 100%;
+    background: url(image/plus.png) no-repeat 50% 50%;
+}
+.work_img:hover > .lovely_work_hover, .work_img:hover > .text_hover{
+    visibility: visible;
+}
+.work_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button_row{
+    width: 100%;
+}
+
+.button_work {
+    width: 145px;
+    margin:0 auto;
+}
+.button_work button{
+    width: 145px;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-top:45px;
+    background-color:  rgb(58, 69, 77);
+    border:2px solid rgb(255,255,255);
+    color:rgb(255,255,255);
+    border-radius:5px;
+    cursor: pointer;
+}
+
+/* --------------------- WHAT WE DO-------------------- */
+.service_row{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.what_we_do{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:25px;
+}
+.description_what_we_do p{
+    text-align: center;
+    color:rgb(150,152,155);
+    line-height:30px;
+    font-size:15px;
+}
+p.name_service{
+    color:rgb(41,47,54);
+    text-transform:uppercase;
+    font-weight:600;
+    padding: 20px 0 15px 0;
+    font-size:15px;
+}
+
+/* --------------------- FEATURES-------------------- */
+.features_row{
+    display: flex;
+    flex-direction:column;
+    padding-bottom:100px;
+}
+.img_features img{
+    width: 100%;
+}
+.description_features{
+    padding-top:15px;
+}
+p.name_features{
+    color: rgb(225, 225, 225);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.description_features span{
+    display:block;
+    color:rgb(225, 225, 225);
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+/* --------------------- CONTACT-------------------- */
+.maps img{
+    width: 100%;
+}
+.contact_information{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.contact_title p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color:rgb(41,47,54);
+    padding-top:50px;
+    padding-bottom:25px;
+}
+.text_contact_inf span{
+    display:block;
+    color:rgb(141, 143, 146);
+    line-height: 25px;
+    padding-bottom:10px
+}
+.text_contact_inf span b{
+    font-weight: 600;
+}
+.contact_button button{
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: rgb(35, 183, 164);
+    border:1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    color:rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+/* --------------------- FOOTER-------------------- */
+.footer{
+    background-color:rgb(58,69,77);
+}
+.footer_row{
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_inf{
+    padding-top:10px;
+    font-size: 15px;
+    color:rgb(225, 225, 225);
+    line-height: 20px;
+}
+.footer_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+.footer_icons .skype, .fb, .twt, .in, .be{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.skype{
+    background:  url(image/icon_skype.png) no-repeat 50% 50%;
+}
+.fb{
+    background:  url(image/icon_facebook.png) no-repeat 50% 50%;
+}
+.be{
+    background:  url(image/icon_be.png) no-repeat 50% 50%;
+}
+.in{
+    background:  url(image/icon_in.png) no-repeat 50% 50%;
+}
+.twt{
+    background:  url(image/icon_tw.png) no-repeat 50% 50%;
 }
 
 
-/* Laptop */
-@media(min-width:992px){
-    .container{
-        max-width: 960px;
+/*-------------------------- Mobile--------------------------  */
+@media(max-width:767px){
+    .main_menu{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin-bottom: 5px;
     }
+    .Goals{
+        margin-top:50px;
+   }
+    .number_goal{
+        width: 15%;
+    }
+    .text_goal{
+        width: 85%;
+ }  
+
+}
+
+
+/* -------------------------- Tablet -------------------------- */
+@media(min-width:768px){
+    .header_row{
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .main_menu{
+        display: flex;
+        margin-left: -5px;
+    }
+
     .social_network{
         width: 305px;
     }
-    .main_menu a{
-        padding: 5px;
-        font-size: 15px;
+    .modest_row{
+        flex-direction: column;
+    }
+    .all_goals{
+        height: 80px;
+    }
+    .all_goals:first-child{
+        margin-top: 50px;
     }
 
-
-}
-
-
-/* desktop */
-@media(min-width:1200px){
-    .container{
-        max-width: 1140px;
-    }
-    .main_menu > li{
-        font-size: 15px;
-    }
     .team_foto{
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin:0 0 0 0;
+        flex-wrap: wrap;
     }
-    .section_team{
+    .work img{
         width: 100%;
+      
     }
-}
-
-
-@media(max-width:767px){
-    .logo, .search{
-        margin: 7px;
-}
-    .main_menu{
+    .work_row{
         display: flex;
         flex-direction: row;
-        overflow-x: auto;
-        white-space: pre;
-        margin-bottom: 5px;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .section_one{
+    .service_row{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+   
+    .footer_row{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+}
 
-        flex-direction: column;
+
+/* -------------------------- Laptop -------------------------- */
+@media(min-width:992px){
+    .modest_row{
+        flex-direction:row
+    }
+    .all_goals:first-child{
+        margin-top: 0;
+    }
+    .text_goal{
+        margin-left:30px;
+    }
+    .features_row{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    p.name_features{
+        margin-top:40px;
+   
+    }
+    .contact_information{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+  
+}
+
+
+/* -------------------------- Desktop -------------------------- */
+@media(min-width:1200px){
+    .main_menu a{
+        font-size:15px;
+    }
+    .what_we_do{
+        margin-bottom: 80px;
+    }
+    .features_row{
+        flex-wrap: nowrap;   
+     }
+     .contact_button{
+        margin-top: 50px;
     }
 }
+
+
+
