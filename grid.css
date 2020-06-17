@@ -17,6 +17,16 @@
     padding-right: 15px;
 }
 
+
+/* Mobile */
+@media(max-width:767px){
+    .col-xs-12{
+        width: 100%;
+    }
+   
+}
+
+
 /* Tablet */
 @media(min-width:768px){
     .container{
@@ -104,9 +114,3 @@
     }
 }
 
-/* Mobile */
-@media(max-width:767px){
-    .col-xs-12{
-        width: 100%;
-    }
-}
