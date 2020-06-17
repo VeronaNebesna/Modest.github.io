@@ -13,12 +13,10 @@ header{
     z-index: 10;
 }
 .header_row{
-    align-items: center; /* Не вирівняю по центру, задана ширина для flex_items елементу 100%*/
+    align-items: center; /* Не вирівняю по центру*/
     flex-direction: column;
 }
-.flex_items{
-    width: 100%;
-}
+
 /* ---------------------MENU--------------------- */
 .main_menu a{
     text-decoration:none;
@@ -602,6 +600,9 @@ p.name_features{
 
 /* -------------------------- Desktop -------------------------- */
 @media(min-width:1200px){
+    .header_row{
+        flex-direction: row;
+    }
     .main_menu a{
         font-size:15px;
     }
