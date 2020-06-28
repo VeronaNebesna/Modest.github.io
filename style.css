@@ -230,7 +230,7 @@ body{
 } 
 .hover_foto_team{
     width: 100%;
-    height: 300px;
+    height:85%;
     background-color: rgba(225,225,225,0.3);
     position: absolute;
     top:0;
@@ -417,7 +417,7 @@ p.name_features{
 .contact_information{
     display:flex;
     flex-direction:column;
-    align-items: center;
+    /* align-items: center; */
     padding-bottom: 60px;
 }
 .contact_title p{
@@ -436,16 +436,7 @@ p.name_features{
 .text_contact_inf span b{
     font-weight: 600;
 }
-.contact_button button{
-    width: 150px;
-    height: 45px;
-    margin-top: 20px;
-    background-color: rgb(35, 183, 164);
-    border:1px solid rgb(225, 225, 225);
-    border-radius: 5px;
-    color:rgb(225, 225, 225);
-    cursor: pointer;
-}
+
 
 /* --------------------- FOOTER-------------------- */
 .footer{
@@ -489,6 +480,95 @@ p.name_features{
 .twt{
     background:  url(image/icon_tw.png) no-repeat 50% 50%;
 }
+
+
+/*-------------------------- МОДАЛЬНЕ ВІКНО №1--------------------------  */
+.contact_message{
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: rgb(35, 183, 164);
+    border:1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    color:rgb(225, 225, 225);
+    cursor: pointer;
+    position: relative;
+}
+
+.send_message{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(35, 183, 164);
+    border:1px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    color:rgb(225, 225, 225);
+    cursor: pointer;
+    margin-top:10px;
+}
+.modal{
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal-block{
+    width:100%;
+    min-height: 450px;
+    border:1px solid grey;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;    
+    position: relative;
+}
+textarea{
+    width: 100%;
+    display: block;
+    height: 200px;
+    background-color:  rgb(226, 226, 226);
+    border:none;
+}
+.form-fields p{
+    margin:15px 0;
+    text-transform: uppercase;
+    color: rgb(141, 143, 146);
+    font-weight: 600;
+}
+
+.form-fields{
+    margin-left: 10px;
+}
+
+.form-fields input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(226, 226, 226);
+    border:0
+}
+
+.close{
+    text-align: right;
+    color: rgb(70, 70, 71);
+    font-weight: 900;
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    right: 10px;
+}
+.close:hover{
+    transform: scale(1.5);
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+
 
 
 /*-------------------------- Mobile--------------------------  */
@@ -603,10 +683,13 @@ p.name_features{
     .contact_information{
         display:flex;
         flex-direction:row;
-        align-items: center;
         padding-bottom: 100px;
     }
-  
+    .hover_foto_team{
+        width: 100%;
+        height:240px;
+    }
+ 
 }
 
 
@@ -642,7 +725,101 @@ p.name_features{
      .contact_button{
         margin-top: 50px;
     }
+    .form-fields{
+        margin-left: 10px;
+        float:left; 
+    }
+     .form-fields:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .modal-block{
+        width: 600px;
+    }
+    textarea{
+        width: 500px;
+    }
+    .form-fields input{
+        width: 250px;
+    }
+    .hover_foto_team{
+        width: 100%;
+        height:300px;
+    }
 }
 
 
+
+
+
+
+
+.modal_wind{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index:100;
+    display: none;
+    
+}
+.modal-block-wind{
+    width:50%;
+    height: 300px; 
+    border:1px solid grey;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;    
+    position: relative;
+    margin:0 auto;
+}
+.modal-block-wind h3{
+    padding:20px;
+    color: rgb(58,69,77);
+    font-weight: 600;
+}
+
+.form-fields-wind input{
+    width:100%;
+    height: 30px;
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    border:0;
+    margin:0 auto;
+}
+.form-fields-wind{
+    margin:20px 0;
+}
+.btn-close{
+    text-align: right;
+    color: rgb(70, 70, 71);
+    font-weight: 900;
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right: 15px;
+}
+.btn-close:hover{
+    transform: scale(1.5);
+}
+.subscription{
+    height: 40px;
+    width: 100%;
+    color: rgb(225, 225, 225);
+    background-color: rgb(35, 183, 164);
+    border:none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top:10px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 

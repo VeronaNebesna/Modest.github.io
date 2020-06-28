@@ -568,7 +568,31 @@
                         </div>
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6">
                                 <div class="contact_button">
-                                    <button>SEND MESSAGE</button>
+                                    <div class="modal">
+                                        <div class="modal-block">
+                                            <form action="">
+                                                <div class="close">X</div>
+
+                                                <div class="form-fields">
+                                                   <p>Your name</p><input type="text" placeholder="Your name">
+                                                </div>
+
+                                                <div class="form-fields">
+                                                    <p>Your male</p><input type="text" placeholder="Your male">
+                                                </div>
+
+                                                <div class="form-fields">
+                                                   <p>Your message</p><p><textarea name="text" id="textarea" ></textarea></p>
+                                                </div>
+
+                                                <button class = "send_message">SEND MESSAGE</button>
+
+                                            </form>
+                                        </div>
+                                
+                                    </div>
+
+                                    <button class = "contact_message">CONTACT US</button>
                                 </div>
                             </div>
                        
@@ -600,5 +624,22 @@
         </div>
         
     </footer>
+    <div class="modal_wind">
+        <div class="modal-block-wind">
+            <form action="">
+                <div class="btn-close">X</div>
+                <h3>Subscribe to us - get a 20% discount!</h3>
+                <div class="form-fields-wind">
+                    <input type="text" placeholder="Your number">
+                </div>
+                <div class="form-fields-wind">
+                    <input type="email" placeholder="Your email">
+                </div>
+                <button class = "subscription">subscription</button>
+            </form>
+        </div>
+
+    </div>
+    <script src = "app.js"></script>
 </body>
 </html>
