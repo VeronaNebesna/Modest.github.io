@@ -39,7 +39,18 @@ let halfHeight = heightWind/2;
 
 let modal_wind_sub = document.querySelector('.modal_wind');
 
-let closeBtnWind = document.querySelector('.btn-close')
+let closeBtnWind = document.querySelector('.btn-close');
+
+window.addEventListener('scroll',displayModal);
+
+let showModalWind = true;
+
+function displayModal (){
+    if(window.pageYOffset >= halfHeight && showModalWind){
+    modal_wind_sub.classList.add("show");
+    showModalWind = false;
+}
+}
 
 function closeModalWindows(){
     modal_wind_sub.classList.remove('show');
@@ -56,12 +67,3 @@ modal_wind_sub.addEventListener('click',function(e){
 
 
 
-window.addEventListener('scroll',displayModal);
-
-
-
-function displayModal (){
-    if(window.pageYOffset > halfHeight){
-    modal_wind_sub.classList.add("show");
-}
-}
