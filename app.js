@@ -63,7 +63,21 @@ modal_wind_sub.addEventListener('click',function(e){
     if(target == modal_wind_sub){
         closeModalWindows()
     }
-})
+});
 
 
+// $(document).ready(function(){
+//     $('.main-slider').bxSlider({
+//         mode:'horizontal',
+//     });
+//   });
 
+
+$(document).ready(function(){
+    $('.slider').bxSlider({
+        controls: false,
+        minSlides: 3,
+        maxSlides: 3,
+        slideMargin:100,
+    });
+  });
