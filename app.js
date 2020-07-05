@@ -81,3 +81,6 @@ $(document).ready(function(){
         slideMargin:100,
     });
   });
+
+
+  AOS.init();
