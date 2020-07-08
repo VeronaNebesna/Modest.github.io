@@ -11,7 +11,7 @@ let sendMesBtn = document.querySelector(".send_message")// шукаємо кно
 // console.log(sendMesBtn) 
 
 contMessageBtn.addEventListener("click",function(){ // показується вікно при натисканні на кнопку зв'язку
-    modalWind.classList.add("show")
+    modalWind.classList.add("show");
 })
 
 closeBtn.addEventListener("click",closeModalWind);// задання події і виклик функції при кліку на хрестик
@@ -65,12 +65,6 @@ modal_wind_sub.addEventListener('click',function(e){
     }
 });
 
-
-// $(document).ready(function(){
-//     $('.main-slider').bxSlider({
-//         mode:'horizontal',
-//     });
-//   });
 
 
 $(document).ready(function(){
