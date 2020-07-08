@@ -84,12 +84,13 @@ body{
 
 /* ---------------------SLIDES--------------------- */
 .slides{
-    width: 100%;
     height: 660px;
     background:url(image/slides.png) no-repeat 50% 50%;
 }
 
 .slider{
+    overflow: hidden;
+    position: absolute;
     padding-top:150px;
     padding-left:20px;
 }
@@ -100,9 +101,9 @@ body{
     border:1px solid white;
     border-radius: 5px;
     padding:10px;
+    margin-right:10px;
     text-transform: uppercase;
     cursor: pointer;
-    margin-right: 15px;
 }
 .btn_slider:hover{
     background-color: rgb(35, 183, 164);
@@ -110,13 +111,12 @@ body{
 .slider p{
     color: rgb(225, 225, 225);
     margin-bottom: 20px;
-    line-height: 20px;
+    line-height: 30px;
 }
 .title_slide{
     color: rgb(225, 225, 225);
     font-size:30px;
     font-weight: 600;
-    
 }
 
 .bx-wrapper .bx-viewport .slider > div{
@@ -127,13 +127,8 @@ body{
     border:none;
     box-shadow: none;
     background-color: rgba(0,0,0,0);
-    display: flex;
-    align-items: center;
-    
 }
-.bx-wrapper .bx-pager{
-    text-align: center;
-}
+
 .bx-wrapper .bx-pager.bx-default-pager a {
     background-color: rgba(0, 0, 0, 0);
     border:2px solid white;
@@ -539,6 +534,8 @@ p.name_features{
 
 
 /*-------------------------- МОДАЛЬНЕ ВІКНО №1--------------------------  */
+
+
 .contact_message{
     width: 150px;
     height: 45px;
@@ -568,6 +565,7 @@ p.name_features{
     width: 100%;
     height: 100%;
     display: none;
+
 }
 .modal-block{
     width:100%;
@@ -577,6 +575,8 @@ p.name_features{
     padding: 15px;
     box-sizing: border-box;    
     position: relative;
+    margin:0 auto;
+ 
 }
 textarea{
     width: 100%;
@@ -737,15 +737,24 @@ textarea{
    
     }
     .contact_information{
-        display:flex;
-        flex-direction:row;
+        
         padding-bottom: 100px;
     }
     .hover_foto_team{
         width: 100%;
         height:240px;
     }
- 
+    .contact_button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 

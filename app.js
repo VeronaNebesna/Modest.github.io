@@ -78,7 +78,9 @@ $(document).ready(function(){
         controls: false,
         minSlides: 3,
         maxSlides: 3,
-        slideMargin:100,
+        auto:true,
+        responsible:true,
+        autoHover: true,
     });
   });
 
