@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,47 +13,57 @@
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    
     <link rel="stylesheet" href="style.css">
-    <title>Blog</title>
+    <title>BLOG</title>
+
 </head>
 <body>
+
+
     <header>
         <div class="container">
-
             <div class="row header_row">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 logo">
+                <div class="col-xs-8 col-sm-2 col-md-3 col-lg-2 logo">
                     <a href=""> <img src="image/modest.png" alt=""></a>
                 </div>
-            
-                
 
-                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 menu"> 
-                    <nav>
-                        <ul class ="main_menu">
-                            <li class="green_text"><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Work</a></li>
-                            <li><a href="">team</a></li>
-                            <li><a href="">services</a></li>
-                            <li><a href="">features</a></li>
-                            <li><a href="">contact</a></li>
+                
+                <div class="col-xs-4 col-sm-8 col-md-7 col-lg-8 menu"> 
+                    <nav class="navigation hiden-menu">
+                        <ul class ="main_menu" id="nav">
+                            <li class="current"><a href="">Home</a></li>
+                            <li ><a href="#about">About</a></li>
+                            <li><a href="#team">team</a></li>
+                            <li ><a href="#work" >Work</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#features">features</a></li>
+                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </nav>
+                    <div class="nav_mobile_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-            
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                     <div class="search">
                         <input name="search" placeholder="search" type="search">
                         <button> </button>
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
+
+
+
     <main>
-        <section class="slides">
+         <section class="slides_back">
             <div class="container">
-                <div class="row slider_row">
-                    <div class="col-xs-12 col-md-7 col-sm-12 col-lg-7">
+                <div class="row">
+                    <div class="col-xs-8 col-md-8 col-sm-8 col-lg-8">
                         <div class="slider">
                             <div>
                                 <p class="title_slide">Welcome our marketplace</p>
@@ -84,193 +93,190 @@
                 </div>
             </div>
         </section>
-        <section class="white_title border_bottom" id="ABOUT">
-            <div class="container">
-                <div class="row">
-                        <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                            <div class="page_title">
-                                <div class="rectangle_white"> </div>
-                                    <span class="title_text_white">meet the team.</span>
-                            </div>
-                        </div>
-                </div>
+    <section class="white_title border_bottom" id="about">
+        <div class="container wrapp">
 
-
-                <div class="row modest_row">
-
-                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"  data-aos="fade-right">
-                            <div class="paragraphs">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero asperiores eos ab eius molestiae eveniet illo temporibus iusto quasi! Autem, hic tenetur. Minus libero quaerat voluptatem pariatur modi voluptatum nemo sit ex est doloribus, incidunt, praesentium earum voluptates.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, <b>sit ameut luctus lorem semper.</b> Debitis dignissimos modi perferendis voluptatibus, itaque mollitia est tempore saepe inventore ex, obcaecati vitae veniam, rerum ad id delectus beatae. Porro quod temporibus consequatur obcaecati corrupti.</p>
-                            </div>
-                            <div class="social_network">
-
-                                <div class="facebook" data-aos="fade-up" data-aos-duration="1000"><a href=""></a></div>
-
-                                <div class ="twitter" data-aos="fade-up" data-aos-duration="1500"><a href=""></a></div>
-
-                                <div class ="google_plus" data-aos="fade-up" data-aos-duration="2000"><a href=""></a></div>
-
-                                <div class ="dribbble" data-aos="fade-up" data-aos-duration="2500"><a href=""></a></div>
-
-                                <div class="behance" data-aos="fade-up" data-aos-duration="3000"><a href=""></a></div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" data-aos="fade-left">
-                            <div class="Goals">
-                                <div class="all_goals">
-                                    <div class="number_goal">
-                                        <div class="square">
-                                            01
-                                        </div>
-                                    </div>
-                                
-                                    <div class="text_goal">
-                                        <span>
-                                            dedication to the customers
-                                        </span>
-                                        <p>Lorem ipsum dolor amet, consectetur adipisicing elit. Doloremque, vero!</p>
-                                    </div>
-                                </div>
-
-                                <div class="all_goals">
-                                    <div class="number_goal">
-                                        <div class="square">
-                                            02
-                                        </div>
-                                    </div>
-                                  
-                                    <div class="text_goal">
-                                        <span>
-                                            working closely with our clients
-                                        </span>
-                                        <p>Provident, hic, libero est unde laboriosam labore aliquid officia similique quaerat id doloribus ea architecto quae et.</p>
-                                    </div>
-                                </div>
-                                    
-    
-    
-                                <div class="all_goals">
-                                    <div class="number_goal">
-                                        <div class="square">
-                                            03
-                                        </div>
-                                    </div>
-                                  
-                                    
-                                    <div class="text_goal">
-                                        <span>
-                                            increase happiness
-                                        </span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                    <div class="page_title">
+                        <div class="rectangle_white"> </div>
+                            <span class="title_text_white">   we are modest.</span>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class = "white_title" id = "TEAM">
-            <div class="container">
-                
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                            <div class="page_title">
-                                <div class="rectangle_white"> </div>
-                                    <span class="title_text_white">meet the team.</span>
+            <div class="row modest_row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7"      data-aos="fade-right">
+                    <div class="paragraphs">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero asperiores eos ab eius molestiae eveniet illo temporibus iusto quasi! Autem, hic tenetur. Minus libero quaerat voluptatem pariatur modi voluptatum nemo sit ex est doloribus, incidunt, praesentium earum voluptates.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, <b>sit ameut luctus lorem semper.</b> Debitis dignissimos modi perferendis voluptatibus, itaque mollitia est tempore saepe inventore ex, obcaecati vitae veniam, rerum ad id delectus beatae. Porro quod temporibus consequatur obcaecati corrupti.</p>
+                    </div>
+                    <div class="social_network">
+                        <div class="facebook" data-aos="fade-up" data-aos-duration="1000"><a href=""></a>
+                        </div>
+
+                        <div class ="twitter" data-aos="fade-up" data-aos-duration="1500"><a href=""></a>
+                        </div>
+
+                        <div class ="google_plus" data-aos="fade-up" data-aos-duration="2000"><a href=""></a>
+                        </div>
+
+                        <div class ="dribbble" data-aos="fade-up" data-aos-duration="2500"><a href=""></a>
+                        </div>
+
+                        <div class="behance" data-aos="fade-up" data-aos-duration="3000"><a href=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 goals"  data-aos="fade-left">
+                    <div class="all_goals" >
+                        <div class="col-xs-3">
+                            <div class="square">
+                                01
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="text_goal">
+                                <span>dedication to the customers</span>
+                                <p>Lorem ipsum dolor amet, consectetur adipisicing elit. Doloremque, vero!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row team_row">
-                            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
-                                <div class="photo_description">
-                                    <div class="photo_team">
-                                        <img src="image/CEO.png" alt="">
-                                    </div>
-
-                                    <div class="team_text">
-                                        <span>gloria bromley</span>
-                                        <p>CEO and Founder</p>
-                                    </div>
-
-                                    <div class="hover_foto_team">
-                                        <div class="team_icons_hover">
-                                            <div class="hover_twit"></div>
-                                            <div class="hover_fb"></div>
-                                            <div class="hover_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="all_goals" >
+                        <div class="col-xs-3">
+                            <div class="square">
+                                02
                             </div>
-
-                            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
-                                <div class="photo_description">
-                                    <div class="photo_team">
-                                        <img src="image/Development.png" alt="">
-                                    </div>
-                                    <div class="team_text">
-                                        <span>paul torres</span>
-                                        <p>Head of Development</p>
-                                    </div>
-
-                                    <div class="hover_foto_team">
-                                        <div class="team_icons_hover">
-                                            <div class="hover_twit"></div>
-                                            <div class="hover_fb"></div>
-                                            <div class="hover_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="text_goal">
+                                <span>working closely with our clients</span>
+                                <p>Provident, hic, libero est unde laboriosam labore aliquid officia similique quaerat id doloribus ea architecto quae et.</p>
                             </div>
-                            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
-                                <div class="photo_description">
-                                    <div class="photo_team">
-                                        <img src="image/Desinger.png" alt="">
-                                    </div>
-                                    
-                                    <div class="team_text">
-                                        <span>judith gillette</span>
-                                        <p>Graphic Desinger</p>
-                                    </div>
-
-                                    <div class="hover_foto_team">
-                                        <div class="team_icons_hover">
-                                            <div class="hover_twit"></div>
-                                            <div class="hover_fb"></div>
-                                            <div class="hover_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="all_goals" >
+                        <div class="col-xs-3">
+                            <div class="square">
+                                03
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="zoom-in">
-                                <div class="photo_description">
-                                    <div class="photo_team">
-                                        <img src="image/Client.png" alt="">
-                                    </div>
-
-                                    <div class="team_text">
-                                        <span>delores reed</span>
-                                        <p>Client Service Director</p>
-                                    </div>
-
-                                    <div class="hover_foto_team">
-                                        <div class="team_icons_hover">
-                                            <div class="hover_twit"></div>
-                                            <div class="hover_fb"></div>
-                                            <div class="hover_in"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="text_goal">
+                                <span>increase happiness</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero!</p>
                             </div>
+                        </div>
                     </div>
                 </div>
-            
-        </section>
-        <section class="dark_title" id = "WORK">
-            <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <section class = "white_title" id = "team">
+        <div class="container wrapp">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                    <div class="page_title">
+                        <div class="rectangle_white"> </div>
+                            <span class="title_text_white">meet the team.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row team_row">
+                <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
+                    <div class="photo_description">
+                        <div class="photo_team">
+                            <img src="image/CEO.png" alt="">
+                        </div>
+
+                        <div class="team_text">
+                            <span>gloria bromley</span>
+                            <p>CEO and Founder</p>
+                        </div>
+
+                        <div class="hover_foto_team">
+                            <div class="team_icons_hover">
+                                <div class="hover_twit"></div>
+                                <div class="hover_fb"></div>
+                                <div class="hover_in"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
+                    <div class="photo_description">
+                        <div class="photo_team">
+                            <img src="image/Development.png" alt="">
+                        </div>
+                        <div class="team_text">
+                            <span>paul torres</span>
+                            <p>Head of Development</p>
+                        </div>
+
+                        <div class="hover_foto_team">
+                            <div class="team_icons_hover">
+                                <div class="hover_twit"></div>
+                                <div class="hover_fb"></div>
+                                <div class="hover_in"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3" data-aos="zoom-in">
+                    <div class="photo_description">
+                        <div class="photo_team">
+                            <img src="image/Desinger.png" alt="">
+                        </div>
+                                
+                        <div class="team_text">
+                            <span>judith gillette</span>
+                            <p>Graphic Desinger</p>
+                        </div>
+
+                        <div class="hover_foto_team">
+                            <div class="team_icons_hover">
+                                <div class="hover_twit"></div>
+                                <div class="hover_fb"></div>
+                                <div class="hover_in"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"  data-aos="zoom-in">
+                    <div class="photo_description">
+                        <div class="photo_team">
+                            <img src="image/Client.png" alt="">
+                        </div>
+
+                        <div class="team_text">
+                            <span>delores reed</span>
+                            <p>Client Service Director</p>
+                        </div>
+
+                        <div class="hover_foto_team">
+                            <div class="team_icons_hover">
+                                <div class="hover_twit"></div>
+                                <div class="hover_fb"></div>
+                                <div class="hover_in"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="dark_title" id ="work">
+        <div class="dark_background">
+            <div class="container wrapp ">
+
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="page_title">
@@ -280,23 +286,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row work_row">
 
+                <div class="row work_row">
                     <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in">
                         <div class="work">
                             <div class="work_img">
                                 <img src="image/img_1.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div>
 
@@ -305,16 +307,12 @@
                             <div class="work_img">
                                 <img src="image/img_2.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div>
 
@@ -323,16 +321,12 @@
                             <div class="work_img">
                                 <img src="image/img_3.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div>
 
@@ -341,16 +335,12 @@
                             <div class="work_img">
                                 <img src="image/img_4.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div>
 
@@ -359,16 +349,12 @@
                             <div class="work_img">
                                 <img src="image/img_5.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div>
 
@@ -377,16 +363,12 @@
                             <div class="work_img">
                                 <img src="image/img_6.png" > </img>
                                 <div class="lovely_work_hover">
-                                    <div class="plus_hover">
-
-                                    </div>
+                                    <div class="plus_hover"></div>
                                 </div>
                                 <div class="text_hover">
                                     <span>partnership guidlines</span>
                                 </div>
                             </div>
-                            
-                           
                         </div>
                     </div> 
 
@@ -400,132 +382,134 @@
                 </div>
                 
             </div>
-        </section>
-        <section class="white_title" id ="SERVICES">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="page_title">
-                            <div class="rectangle_white"> 
-                            </div>
-                                <span class="title_text_white">what we do.</span>
-                        </div>
+        </div>
+    </section>
+
+    <section class="white_title" id ="services">
+        <div class="container wrapp">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="page_title">
+                        <div class="rectangle_white"> </div>
+                            <span class="title_text_white">what we do.</span>
                     </div>
-                </div>
-                <div class="row service_row">
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_1.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">easy theme setup</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_2.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">pixel perfect design</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_3.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">responsive display</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_4.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">24/7 support</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_1.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">easy theme setup</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_2.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">pixel perfect design</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_3.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">responsive display</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="what_we_do">
-                            <div class="img_what_we_do">
-                                <img src="image/we_do_4.png" alt="">
-                            </div>
-                            <div class="description_what_we_do">
-                                <p class = "name_service">24/7 support</p>
-                                <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
-        </section>
-        <section class="dark_title" id="FEATURES">
-            <div class="container">
+            <div class="row service_row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_1.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">easy theme setup</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_2.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">pixel perfect design</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_3.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">responsive display</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_4.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">24/7 support</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_1.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">easy theme setup</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_2.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">pixel perfect design</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_3.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">responsive display</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out" data-aos-duration="700">
+                    <div class="what_we_do">
+                        <div class="img_what_we_do">
+                            <img src="image/we_do_4.png" alt="">
+                        </div>
+                        <div class="description_what_we_do">
+                            <p class = "name_service">24/7 support</p>
+                            <p>Nunc mattis lorem in leo loboris, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dark_title" id="features">
+        <div class="dark_background">
+            <div class="container wrapp">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="page_title">
-                            <div class="rectangle_dark"> 
-                            </div>
+                            <div class="rectangle_dark"> </div>
                                 <span class="title_text_dark">features.</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="row features_row">
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-aos="flip-left">
@@ -565,26 +549,29 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="white_title" id="CONTACT">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="page_title">
-                            <div class="rectangle_white"> 
-                            </div>
-                                <span class="title_text_white">stay in touch.</span>
+        </div>
+    </section>
+
+
+    <section class="white_title" id="contact">
+        <div class="container wrapp">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="page_title">
+                        <div class="rectangle_white"> 
                         </div>
+                            <span class="title_text_white">stay in touch.</span>
                     </div>
                 </div>
-               
-            </div>
+            </div>    
+        </div>
             
-            <div class="row_for_maps">
+            <div class="row_for_maps" data-aos="fade" data-aos-duration="2000">
                 <div class="maps">
                     <img src="image/maps.png" alt="">
                 </div>
             </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -592,12 +579,10 @@
                             <p>contact information</p>
                         </div>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="contact_information">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        
                             <div class="text_contact_inf">
                                 <span>
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.
@@ -643,6 +628,10 @@
         </section>
 
     </main>
+
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="row footer_row">
@@ -665,6 +654,8 @@
         </div>
         
     </footer>
+
+
     <div class="modal_wind">
         <div class="modal-block-wind">
             <form action="">
@@ -681,11 +672,12 @@
         </div>
 
     </div>
-   
-    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery.nav.js" ></script>
     <script src = "app.js"></script>
 </body>
 </html>

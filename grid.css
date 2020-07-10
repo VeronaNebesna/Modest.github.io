@@ -20,13 +20,19 @@ header{
     background-color: rgb(29, 33, 38);
     position: sticky;
     top:0;
-    z-index: 10;
+    z-index: 100;
 }
 
 /* Mobile */
 @media(max-width:767px){
     .col-xs-12{
         width: 100%;
+    }
+    .col-xs-3{
+        width:  25%;
+    }
+    .col-xs-7{
+        width: 75%;
     }
    
 }
@@ -37,9 +43,7 @@ header{
     .container{
         max-width:720px;
     }
-    .col-sm-12{
-        width: 100%;
-    }
+   
     .col-sm-6{
         width: 50%;
     }
@@ -51,6 +55,15 @@ header{
     }
     .col-sm-8{
         width: 66.66%;
+    }
+    .col-sm-3{
+        width:25% ;
+    }
+    .col-sm-7{
+        width: 58.33%;
+    }
+    .col-sm-2{
+        width: 15%;
     }
 }
 

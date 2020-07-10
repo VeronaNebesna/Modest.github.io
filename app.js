@@ -1,3 +1,7 @@
+
+// --------------- МОДАЛЬНЕ ВІКНО  CONTACT US-------------------
+
+
 let contMessageBtn = document.querySelector('.contact_message');// Шукаємо кнопку зв'язку
 // console.log(sendMessageBtn);
 
@@ -32,6 +36,10 @@ function closeModalWind(){
 // })
 
 
+
+
+
+// -----------------------------МОДАЛЬНЕ ВІКНО НА ПОЛОВИНІ ВИСОТИ-----------
 let heightWind = document.body.scrollHeight;
 // console.log(heightWind)
 let halfHeight = heightWind/2;
@@ -65,18 +73,55 @@ modal_wind_sub.addEventListener('click',function(e){
     }
 });
 
-
+// -----------------------------СЛАЙДЕР------------------
 
 $(document).ready(function(){
     $('.slider').bxSlider({
         controls: false,
-        minSlides: 3,
-        maxSlides: 3,
         auto:true,
-        responsible:true,
-        autoHover: true,
+        adaptiveHeight: true,
+        speed:300,
+        touchEnabled: true,
+        responsive: true,
+        infiniteLoop:true,
     });
   });
 
-
+// -----------------------------АНІМАЦІЯ БЛОКІВ------------------
   AOS.init();
+
+
+  // -----------------------------АНІМАЦІЯ ПУНКТІВ МЕНЮ------------------
+  $('#nav').onePageNav({
+    currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+  })
+
+
+
+
+
+// -----------ГАМБУРГЕР МЕНЮ------------
+
+let mobileMenu =document.querySelector(".nav_mobile_menu");
+let mainMenu = document.querySelector(".navigation");
+
+mobileMenu.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active_menu");
+    if(mobileMenu.classList.contains("active_menu")){
+        mainMenu.classList.add("active_menu")
+    }else{
+        mainMenu.classList.remove("active_menu")
+    }
+})
+
+
+
+
+// $("#nav").click(function(){
+//     $("html,body").animate({
+//         scrollTop:$("#team").offset().top
+//     },1000)
+// })
