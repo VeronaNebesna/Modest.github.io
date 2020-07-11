@@ -136,7 +136,7 @@ body .current a {
 /* ---------------------SLIDES--------------------- */
 .slides_back{
     height: 660px;
-    background:url(../image/slides.png) no-repeat 50% 50%;
+    background:url(image/slides.png) no-repeat 50% 50%;
 }
 
 .slider{
